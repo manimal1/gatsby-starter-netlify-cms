@@ -18,7 +18,6 @@ export const ProductPageTemplate = ({
   testTitle
 }) => (
   <div className="content">
-    <h1>{testTitle}</h1>
     <div
       className="full-width-image-container margin-top-0"
       style={{
@@ -36,6 +35,7 @@ export const ProductPageTemplate = ({
           padding: '1rem',
         }}
       >
+        <h1>{testTitle}</h1>
         {title}
       </h2>
     </div>
