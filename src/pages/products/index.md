@@ -4,7 +4,6 @@ path: /products
 templateKey: product-page
 title: Our Coffee
 image: /img/jumbotron.jpg
-heading: Great coffee with a conscience
 test:
   title: 'testName'
 description: >-
