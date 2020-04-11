@@ -1,9 +1,9 @@
 ---
-templateKey: 'product-page'
+heading: Great coffee with a conscience
 path: /products
+templateKey: product-page
 title: Our Coffee
 image: /img/jumbotron.jpg
-heading: Great coffee with a conscience
 description: >-
   Kaldi is the ultimate spot for coffee lovers who want to learn about their
   java’s origin and support the farmers that grew it. We take coffee production,
@@ -13,6 +13,9 @@ intro:
   blurbs:
     - image: /img/coffee.png
       text: >
+        TESTING TESTING!
+
+
         We sell green and roasted coffee beans that are sourced directly from
         independent farmers and farm cooperatives. We’re proud to offer a
         variety of coffee beans grown with great care for the environment and
