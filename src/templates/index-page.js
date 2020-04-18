@@ -6,6 +6,7 @@ import Layout from '../components/Layout'
 import Features from '../components/Features'
 import BlogRoll from '../components/BlogRoll'
 import YoutubeSnapshot from '../components/YoutubeSnapshot'
+import InstagramSnapshot from '../components/InstagramSnapshot';
 
 export const IndexPageTemplate = ({
   image,
@@ -66,6 +67,18 @@ export const IndexPageTemplate = ({
       </div>
     </div>
     <section className="section section--gradient">
+      <div className="column is-12">
+        <h3 className="has-text-weight-semibold is-size-2">
+          Latest youtube links
+        </h3>
+      </div>
+      <YoutubeSnapshot />
+      <div className="column is-12">
+        <h3 className="has-text-weight-semibold is-size-2">
+          Instagram posts
+        </h3>
+      </div>
+      <InstagramSnapshot />
       <div className="container">
         <div className="section">
           <div className="columns">
@@ -106,14 +119,6 @@ export const IndexPageTemplate = ({
                     </Link>
                   </div>
                 </div>
-
-                <div className="column is-12">
-                  <h3 className="has-text-weight-semibold is-size-2">
-                    Latest youtube links
-                  </h3>
-                  <YoutubeSnapshot />
-                </div>
-
               </div>
             </div>
           </div>

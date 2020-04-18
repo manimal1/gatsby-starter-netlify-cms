@@ -60,6 +60,21 @@ module.exports = {
       },
     },
     {
+      resolve: 'gatsby-source-youtube-v2',
+      options: {
+        channelId: ['UCNB6tlfkycTyaxCoX0xAjWg'],
+        apiKey: 'AIzaSyC6TzrFqJhHFzkLPDUnaIzWmKtmGGHtLq8',
+        maxVideos: 6 // Defaults to 50
+      },
+    },
+    {
+      resolve: 'gatsby-source-instagram',
+      options: {
+        type: 'user-profile',
+        username: 'expatizen',
+      },
+    },
+    {
       resolve: 'gatsby-plugin-netlify-cms',
       options: {
         modulePath: `${__dirname}/src/cms/cms.js`,

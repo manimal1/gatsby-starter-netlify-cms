@@ -35,7 +35,6 @@ export const ProductPageTemplate = ({
           padding: '1rem',
         }}
       >
-        <h1>{testTitle}</h1>
         {title}
       </h2>
     </div>
