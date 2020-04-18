@@ -70,7 +70,6 @@ module.exports = {
     {
       resolve: 'gatsby-source-instagram',
       options: {
-        type: 'user-profile',
         username: 'expatizen',
       },
     },

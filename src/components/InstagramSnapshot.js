@@ -6,11 +6,11 @@ import Img from 'gatsby-image'
 class InstagramSnapshot extends React.Component {
   render() {
     const { data } = this.props
+    if (!data) return null;
     const { edges: images } = data.allInstaNode
 
     return (
       <div className="columns is-multiline">
-        
         {images && images.map(({ node: image }) => (
           <div key={image.id}>
             <Img
@@ -26,7 +26,7 @@ class InstagramSnapshot extends React.Component {
 
 InstagramSnapshot.propTypes = {
   data: PropTypes.shape({
-    allYoutubeVideo: PropTypes.shape({
+    allInstaNode: PropTypes.shape({
       edges: PropTypes.array,
     }),
   }),
@@ -36,7 +36,7 @@ export default () => (
   <StaticQuery
     query={graphql`
       query InstagramImagesQuery {
-        allInstaNode(sort: { order: DESC, fields: [timestamp]}, limit: 6) {
+        allInstaNode(limit: 6) {
           edges {
             node {
               id
@@ -49,7 +49,7 @@ export default () => (
               caption
               localFile {
                 childImageSharp {
-                  fixed(width: 300, height: 300) {
+                  fixed(width: 150, height: 150) {
                     ...GatsbyImageSharpFixed
                   }
                 }
